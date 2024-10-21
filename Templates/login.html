@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+{% extends 'base.html'%}
+{% block content%}
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
-
-</head>
 <body>
     <div style="margin-top: 50px;" class="ui container">  
-        <h1 class="ui center aligned big header">Login Page</h1>
-        <div style="margin: 20px;">
+        <h1 class="ui center aligned big header">Login</h1>
+        <div style="margin: 50px;">
         <div style="text-align:center;">
         <form method="POST" action="">
-            <div class="ui raised segments">
-                <div class="ui segment">
+        <form style="input is-large">
             {{ form.hidden_tag() }}
-            {{ form.username }}<br>
-                </div>
-                <div class="ui segment">
-            {{ form.password }}<br>
-                </div>
-                <div class="ui segment">      
+            {{ form.username }}
+            
+            {{ form.password }}
+                
             {{ form.submit }}
-                </div>
-        </div>
+        
+        
         </div>
         </div>
         </form>
@@ -34,4 +23,4 @@
         <a class="ui blue button" href="{{url_for('register')}}">Don't have an account? Sign up</a>
     </div>
 </body>
-</html>
+{% endblock %}
