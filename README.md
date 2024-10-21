@@ -1,5 +1,5 @@
 <pre>
-A simple assignment of SE Assignment 8.
+A simple assignment for SE.
 
 Authors:
 1. Indrajeet
