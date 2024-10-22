@@ -23,7 +23,7 @@ To Run the app.py:
 
 <pre>  
 Authors:
-1. Indrajeet
-2. Neil
-3. Sujal
+1. Indrajeet Shelake
+2. Neil Pande
+3. Sujal Nandapurkar
 </pre>
